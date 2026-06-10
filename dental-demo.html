@@ -1,19 +1,167 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Dental Demo</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dental Appointment Bot Demo</title>
+
+<style>
+body{
+    background:#0a0a0a;
+    color:white;
+    font-family:Arial,sans-serif;
+    margin:0;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:50px 20px;
+}
+
+h1{
+    text-align:center;
+}
+
+.subtitle{
+    text-align:center;
+    color:#aaa;
+    margin-bottom:50px;
+}
+
+.chat{
+    max-width:700px;
+    margin:auto;
+    background:#151515;
+    border-radius:15px;
+    padding:25px;
+}
+
+.message{
+    padding:15px;
+    border-radius:10px;
+    margin-bottom:15px;
+    max-width:75%;
+}
+
+.user{
+    background:#8b5cf6;
+    margin-left:auto;
+}
+
+.bot{
+    background:#222;
+}
+
+.workflow{
+    margin-top:60px;
+    text-align:center;
+}
+
+.step{
+    background:#151515;
+    padding:20px;
+    margin:15px auto;
+    max-width:300px;
+    border-radius:10px;
+}
+
+.arrow{
+    color:#8b5cf6;
+    font-size:30px;
+}
+
+.btn{
+    display:inline-block;
+    background:#8b5cf6;
+    color:white;
+    text-decoration:none;
+    padding:12px 24px;
+    border-radius:8px;
+    margin-top:40px;
+}
+</style>
 </head>
-<body style="background:black;color:white;font-family:Arial;text-align:center;padding:50px;">
+
+<body>
+
+<div class="container">
 
 <h1>🦷 Dental Appointment Bot Demo</h1>
 
-<p>
-This is my dental booking automation demonstration.
+<p class="subtitle">
+AI receptionist for dental clinics
 </p>
 
-<a href="index.html">
-Back to Home
+<div class="chat">
+
+<div class="message user">
+Can I book a cleaning on Friday?
+</div>
+
+<div class="message bot">
+Friday is fully booked.
+</div>
+
+<div class="message bot">
+Available appointments:
+<br><br>
+10:00 AM
+<br>
+1:00 PM
+<br>
+4:00 PM
+</div>
+
+<div class="message user">
+1:00 PM works.
+</div>
+
+<div class="message bot">
+Perfect! Your appointment has been booked.
+</div>
+
+<div class="message bot">
+Confirmation email sent successfully.
+</div>
+
+</div>
+
+<div class="workflow">
+
+<h2>Automation Workflow</h2>
+
+<div class="step">
+🤖 AI Chatbot
+</div>
+
+<div class="arrow">↓</div>
+
+<div class="step">
+📅 Google Calendar
+</div>
+
+<div class="arrow">↓</div>
+
+<div class="step">
+📧 Email Confirmation
+</div>
+
+<div class="arrow">↓</div>
+
+<div class="step">
+✅ Appointment Scheduled
+</div>
+
+</div>
+
+<div style="text-align:center">
+<a href="index.html" class="btn">
+Back To Portfolio
 </a>
+</div>
+
+</div>
 
 </body>
 </html>
